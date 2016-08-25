@@ -251,3 +251,36 @@ WebSocket transport not available. Install eventlet or gevent and gevent-websock
 169.45.82.18 - - [25/Aug/2016 11:13:52] "PUT /data HTTP/1.1" 204 -
 169.45.82.18 - - [25/Aug/2016 11:14:17] "PUT /data HTTP/1.1" 204 -
 169.45.82.18 - - [25/Aug/2016 11:14:42] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:15:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:15:32] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:15:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:16:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:16:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:17:12] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:17:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:18:02] "PUT /data HTTP/1.1" 204 -
+rue},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-169.45.82.18 - - [25/Aug/2016 11:18:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:18:52] "PUT /data HTTP/1.1" 204 -
