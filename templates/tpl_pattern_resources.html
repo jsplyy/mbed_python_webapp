@@ -1,0 +1,37 @@
+	 <html>
+		<head>
+			<link REL="SHORTCUT ICON" HREF="../static/img/favicon.ico">
+			<title>mbed clients</title>
+			<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+			<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+			<script type="text/javascript">
+				function submitText(){
+					var value=$("#pat").val();
+					alert(value);
+					if(value=="")
+						value='1'
+
+					var url = "./get_pattern_resource?pointid=";
+					window.location.href = url + "{{pointid}}" + "&patternid=" + "{{patternid}}" + "&value=" + value;
+				}
+			</script>
+		</head>
+	 <body>
+	 	<div class="container">
+	 		<h3><img src="../static/img/NXP_logo.png">  Here is all the information about board button</h3>
+			<hr>
+			<h5><strong>Clinet board ID:{{pointid}} </strong> <strong><a href="./" style="float: right">返回主页</a></strong></h5><hr>
+			<p>PatternID:{{patternid}}</p>
+			<hr>
+			<p>Current Pattern is {{patternContent}}</p>
+			<div class="input-group">
+               <input type="text" class="form-control" id="pat">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick=submitText()>
+                     Submit
+                  </button>
+               </span>              
+            </div><!-- /input-group -->
+	 	</div>
+	 </body>
+	 </html>

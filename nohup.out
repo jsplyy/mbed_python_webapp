@@ -1,0 +1,253 @@
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+117.62.2.86 - - [25/Aug/2016 02:44:49] "GET /mcu_temp HTTP/1.1" 200 -
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+117.62.2.86 - - [25/Aug/2016 02:48:07] "GET /mcu_temp HTTP/1.1" 200 -
+117.62.2.86 - - [25/Aug/2016 02:48:12] "GET / HTTP/1.1" 200 -
+117.62.2.86 - - [25/Aug/2016 02:48:15] "GET /resources?pointid=67e70b71-9460-4d1b-9035-c5eee0256f86 HTTP/1.1" 200 -
+117.62.2.86 - - [25/Aug/2016 02:48:17] "GET / HTTP/1.1" 200 -
+117.62.2.86 - - [25/Aug/2016 02:48:44] "GET /mcu_temp HTTP/1.1" 200 -
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Debugger is active!
+ * Debugger pin code: 336-729-403
+169.45.82.18 - - [25/Aug/2016 10:29:58] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:29:58] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:29:59] "GET / HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:29:59] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:29:59] "GET /static/img/NXP_logo.png HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:30:00] "GET /img/favicon.ico HTTP/1.1" 404 -
+123.151.195.1 - - [25/Aug/2016 10:30:01] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+{u'url': u'http://ss.iotcent.org:81/data', u'headers': {}}
+{}
+{}
+[{u'status': u'ACTIVE', u'type': u'test', u'name': u'67e70b71-9460-4d1b-9035-c5eee0256f86'}]
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","169.45.82.18 - - [25/Aug/2016 10:30:28] "PUT /data HTTP/1.1" 204 -
+{u'url': u'http://ss.iotcent.org:81/data', u'headers': {}}
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Running on http://0.0.0.0:81/ (Press CTRL+C to quit)
+ * Restarting with stat
+WebSocket transport not available. Install eventlet or gevent and gevent-websocket for improved performance.
+ * Debugger is active!
+ * Debugger pin code: 336-729-403
+169.45.82.18 - - [25/Aug/2016 10:37:01] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:37:01] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:37:01] "GET /mcu_temp HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:37:01] "GET /mcu_temp HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:37:01] "GET /mcu_temp HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:37:01] "GET /mcu_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:37:02] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:37:03] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:37:03] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:37:10] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:37:10] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:37:13] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:37:15] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:37:15] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:37:20] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:37:20] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:37:38] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:38:03] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:38:28] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:38:53] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:39:19] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:39:43] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:40:13] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:40:33] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:41:03] "PUT /data HTTP/1.1" 204 -
+93.174.93.136 - - [25/Aug/2016 10:41:06] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 -
+169.45.82.18 - - [25/Aug/2016 10:41:23] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:41:48] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:42:13] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:42:38] "PUT /data HTTP/1.1" 204 -
+{u'url': u'http://mbed.iotcent.org:81/data', u'headers': {}}
+{}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]},{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"async-responses":[{"id":"1063413785#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"async-responses":[{"id":"1063413786#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"async-responses":[{"id":"1063413787#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"async-responses":[{"id":"1063413788#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"169.45.82.18 - - [25/Aug/2016 10:43:03] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:43:28] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:43:53] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:44:23] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:44:43] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:45:08] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:45:33] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:45:58] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:08] "GET /mcu_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:10] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:10] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:17] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:17] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:19] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:19] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:23] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:46:25] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:25] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:30] "PUT /data HTTP/1.1" 204 -
+123.151.195.1 - - [25/Aug/2016 10:46:30] "GET /mcu_temp/get_temp HTTP/1.1" 200 -
+123.151.195.1 - - [25/Aug/2016 10:46:31] "GET / HTTP/1.1" 200 -
+169.45.82.18 - - [25/Aug/2016 10:46:48] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:47:13] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:47:38] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:48:03] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:48:28] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:48:53] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:49:18] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:49:43] "PUT /data HTTP/1.1" 204 -
+/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"async-responses":[{"id":"1063413789#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"async-responses":[{"id":"1063413790#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"async-responses":[{"id":"1063413791#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"async-responses":[{"id":"1063413792#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+{"async-responses":[{"id":"1063413793#67e70b71-9460-4d1b-9035-c5eee0256f86@9a3572f4-a2af-4ec2-a232-cf75fe6bf7a1/3205/0/3206","status":200,"payload":"MzY=","max-age":60}]}
+36
+[{u'status': u'ACTIVE', u'type': u'test', u'name': u'67e70b71-9460-4d1b-9035-c5eee0256f86'}]
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs"169.45.82.18 - - [25/Aug/2016 10:50:08] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:50:33] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:50:58] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:51:24] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:51:48] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:52:13] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:52:38] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:53:03] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:53:28] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:53:58] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:54:18] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:54:49] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:55:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:55:32] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:55:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:56:22] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:56:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:57:12] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:57:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:58:02] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:58:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:58:58] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 10:59:17] "PUT /data HTTP/1.1" 204 -
+:true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-903169.45.82.18 - - [25/Aug/2016 10:59:42] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:00:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:00:32] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:00:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:01:22] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:01:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:02:12] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:02:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:03:02] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:03:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:03:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:04:17] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:04:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:05:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:05:35] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:05:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:06:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:06:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:07:12] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:07:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:08:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:08:27] "PUT /data HTTP/1.1" 204 -
+5-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":true},{"path":"/3/0","ct":"","obs":false}]}]}
+{"reg-updates":[{"ep":"67e70b71-9460-4d1b-9035-c5eee0256f86","ept":"test","resources":[{"path":"/3205/0/3206","rt":"temp","ct":"","obs":t169.45.82.18 - - [25/Aug/2016 11:08:52] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:09:17] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:09:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:10:07] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:10:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:10:57] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:11:22] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:11:47] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:12:12] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:12:37] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:13:02] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:13:27] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:13:52] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:14:17] "PUT /data HTTP/1.1" 204 -
+169.45.82.18 - - [25/Aug/2016 11:14:42] "PUT /data HTTP/1.1" 204 -

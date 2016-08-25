@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link REL="SHORTCUT ICON" HREF="../static/img/favicon.ico">
+		<title>mbed clients</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+		<script type="text/javascript">
+		function getNoresource(){
+			window.location.href = "./";
+		}		
+		function getButtonResource(pointid,buttonid){
+			var url = "./get_button_resource?pointid=";
+			window.location.href = url + pointid + "&buttonid=" + buttonid;
+		}
+		function getBlinkResource(pointid,blinkid){
+			var url = "./get_blink_resource?pointid=";
+			window.location.href = url + pointid + "&blinkid=" + blinkid;
+		}
+		function getPatternResource(pointid,patternid){
+			var url = "./get_pattern_resource?pointid=";
+			window.location.href = url + pointid + "&patternid=" + patternid + "&value=1";
+		}
+
+	</script>
+	</head>
+	<body>
+		<div class="container">
+			<h3><img src="../static/img/NXP_logo.png">  Here is all the open board resources in mbed client:</h3>
+			<hr>
+			<h5><strong>Clinet board ID: {{pointid}}</strong>  <strong><a href="./" style="float: right">返回主页</a></strong></h5>
+			<hr>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Resource name</th>
+						<th>Resource ID</th>
+						<th>status</th>
+						<th>manage</th>
+					</tr>
+					{% for index in number %}
+						<tr>
+							
+							<td>
+								{% if epResources[index]['rt']=="" %}
+									Object
+								{% else  %}
+									{{epResources[index]['rt']}}	
+								{% endif %}	
+							</td>
+							<td>{{epResources[index]['uri']}}</td>
+							<td>active</td>
+							<td>
+								{% if epResources[index]['rt']=='Blink' %}
+									<button class="btn btn-warning" onclick=getBlinkResource("{{pointid}}","{{epResources[index]['uri']}}")>Start</button>
+								{% elif epResources[index]['rt']=='Button' %}
+									<button class="btn btn-warning" onclick=getButtonResource("{{pointid}}","{{epResources[index]['uri']}}")>GetCnt</button>
+								{% elif epResources[index]['rt']=='Pattern' %}
+									<button class="btn btn-warning" onclick=getPatternResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>	
+								{% else %}
+									<button class="btn btn-warning" onclick=getNoresource()>Control</button>
+								{% endif %}
+							</td>
+						</tr>
+					{% endfor %}
+
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

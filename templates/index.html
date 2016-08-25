@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link REL="SHORTCUT ICON" HREF="../static/img/favicon.ico">
+		<link REL="SHORTCUT ICON" HREF="./img/favicon.ico">
+		<title>mbed clients</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+		<script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+			function getresources(pointid){
+				//alert(pointid);
+				var url = "./resources?pointid=";
+				window.location.href = url + pointid;
+
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h3><img src="../static/img/NXP_logo.png">  Here is all the connected mbed clients:</h3>
+			<hr>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>point ID</th>
+							<th>status</th>
+							<th>watch</th>
+						</tr>
+						{% for index in number %}
+							<tr>
+								<td>{{epList[index]['name']}}</td>
+								<td>active</td>
+								<td><button class="btn btn-warning" onclick=getresources("{{epList[index]['name']}}")>resources</button></td>
+							</tr>
+						{% endfor %}	
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+		</div>
+	</body>
+</html>

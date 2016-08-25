@@ -1,0 +1,207 @@
+{% include 'header.html' %}
+    <title>mcu monitor</title>
+</head>
+<body style="text-align: center">
+
+    <div class="container">
+        <h3><img src="../static/img/NXP_logo.png">  Here is MCU temperature monitor</h3>
+        <hr>
+        <hr>
+        <div id="main" style="width: 900px;height:500px;text-align: center"></div>
+    </div>
+
+
+
+    <script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
+    <script type="text/javascript">
+
+        function GetRandomNum(Min,Max)
+        {   
+        var Range = Max - Min;   
+        var Rand = Math.random();   
+        return(Min + Math.round(Rand * Range));   
+        } 
+
+        function getRandom()
+        {
+            var tempValue = 30;
+            $.ajax({
+                url: "http://mbed.iotcent.org:81/mcu_temp/get_temp",
+                // data: {data: "2"},
+                async: false,
+                success: function (data) {
+                    // 根据数据库取到结果拼接现在结果
+                    // alert("data="+data);
+                    tempValue = data;
+                    // alert("tempValue="+tempValue);
+                    // return parseInt(data,10);
+                }
+            });    
+            // alert(tempValue);  
+            return tempValue;      
+        }
+
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        window.onresize = myChart.resize;
+        // 指定图表的配置项和数据
+        var initData = getRandom();
+option = {
+    title : {
+        text: 'MCU实时温度',
+        // subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['折线图', '直方图']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    dataZoom : {
+        show : false,
+        start : 0,
+        end : 100
+    },
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : true,
+            data : (function (){
+                var now = new Date();
+                var res = [];
+                var len = 10;
+                while (len--) {
+                    res.unshift(now.toLocaleTimeString().replace(/^\D*/,''));
+                    now = new Date(now - 5000);
+                }
+                return res;
+            })()
+        },
+        {
+            type : 'category',
+            boundaryGap : true,
+            data : (function (){
+                var res = [];
+                var len = 0;
+
+                while (len<10) {
+
+                    res.push(len + 1);
+                    len = len + 1;                    
+                }
+                return res;
+            })()
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            scale: true,
+            name : '温度',
+            boundaryGap: [0.2, 0.2]
+        },
+        {
+            type : 'value',
+            scale: true,
+            name : '温度',
+            boundaryGap: [0.2, 0.2]
+        }
+    ],
+    series : [
+        {
+            name:'直方图',
+            type:'bar',
+            xAxisIndex: 1,
+            yAxisIndex: 1,
+            data:(function (){
+                var res = [];
+                var len = 10;
+
+                while (len--) {
+                    res.push(initData);
+                    }
+                return res;
+            })()
+        },
+        {
+            name:'折线图',
+            type:'line',
+            data:(function (){
+                var res = [];
+                var len = 10;
+
+                while (len--) {
+                    res.push(initData);
+                    // res.push((Math.random()*10 + 5).toFixed(1) - 0);
+                }
+                return res;
+            })()
+        }
+    ]
+};
+myChart.setOption(option);
+
+var timeTicket;
+var lastData = 11;
+var axisData;
+clearInterval(timeTicket);
+
+
+var sc = 20;
+function play (){
+
+    // lastData = GetRandomNum(34,40);
+    lastData = getRandom();
+    // alert(lastData);
+    // lastData =             $.ajax({
+    //             url: "http://127.0.0.1/mcu_temp/temp",
+    //             data: {data: "2"},
+    //             success: function (data) {
+    //                 // 根据数据库取到结果拼接现在结果
+    //                 alert(data);
+    //                 return parseInt(data,10);
+    //             }
+    //         });
+    // lastData = lastData.toFixed(1) - 0;
+    //alert(lastData);
+    axisData = (new Date()).toLocaleTimeString().replace(/^\D*/,'');
+    //alert(axisData);
+    // 动态数据接口 addData
+    myChart.addData([
+        [
+            0,        // 系列索引
+            // Math.round(Math.random() * 1000), // 新增数据
+            lastData,
+            false,       // 新增数据是否从队列头部插入
+            false     // 是否增加队列长度，false则自定删除原有数据，队头插入删队尾，队尾插入删队头
+        ],
+        [
+            1,        // 系列索引
+            // lastData, // 新增数据
+            lastData,
+            false,    // 新增数据是否从队列头部插入  
+            false,    // 是否增加队列长度，false则自定删除原有数据，队头插入删队尾，队尾插入删队头
+            axisData  // 坐标轴标签
+        ]
+    ]);
+    // myChart.setOption(option);
+}
+
+
+timeTicket = setInterval("play()", 5000);
+                                  
+
+        // 使用刚指定的配置项和数据显示图表。
+
+    </script>
+{% include 'footer.html' %}
