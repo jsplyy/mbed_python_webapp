@@ -8,6 +8,7 @@ import random
 import Queue
 import json
 import base64
+import MySQLdb as mdb
 app = Flask(__name__)
 socketio = SocketIO(app,async_mode='threading')
 queueTemp = Queue.Queue(maxsize = 30)
@@ -21,6 +22,8 @@ else:
 connector = mbed_connector_api.connector(token)
 connector.putCallback("http://mbed.iotcent.org:81/data")
 print connector.getCallback().result
+con = mdb.connect('localhost', 'root', '')      # connect to mysql
+cur = con.cursor()                              # get the module of cursor
 
 
 
@@ -125,7 +128,11 @@ def get_temp_():
 	res_id = data['async-response-id']
 	while res_id not in tempDisc.keys():
 		None
-
+	cur.execute("use temperature")
+	sql = "insert into temp values(%s, %s, %s)"
+	param = (time.strftime('%H:%M:%S'), tempDisc[res_id], time.strftime('%y:%m:%d'))
+	cur.execute(sql, param)
+	con.commit()
 	return tempDisc[res_id]
 # notifications channel
 @app.route('/data', methods=['PUT'])
@@ -224,5 +231,17 @@ if __name__ == "__main__":
 	# connector.deleteAllSubscriptions()							# remove all subscriptions, start fresh
 	# connector.startLongPolling()								# start long polling connector.mbed.com
 	# connector.setHandler('notifications', notificationHandler) 	# send 'notifications' to the notificationHandler FN
+	# create database TempHumTable if it not exists
+	cur.execute("create database if not exists temperature")
+	# select the database TempHumTable
+	cur.execute("use tempereture")
+	# create table temp for storing the temparature data if it not exists
+	cur.execute("create table if not exists temp(time TIME, temperature FLOAT(4,2), date DATE)")
+	# # clean the temp & hum table everyday
+	# curdate = time.strftime('%y:%m:%d')
+	# cur.execute("delete from temp where date < %s", [curdate])
+	# commit update to the database
+	con.commit()
+	print 'init database successfully!'
 	socketio.run(app,host='0.0.0.0', port=81,debug=True)
 	# socketio.run(app,host='0.0.0.0', port=1008)
