@@ -1,5 +1,4 @@
 backports.ssl-match-hostname==3.4.0.2
-chardet==2.0.1
 click==6.6
 configobj==4.7.2
 decorator==3.4.0

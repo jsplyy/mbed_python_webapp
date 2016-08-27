@@ -19,7 +19,7 @@ else:
 	token = "4SMf3bbEWuzD8tGxM7Kg9LQr4RZY7xpEPgbHde5AKGFd63CHvNajtDN3PoACybLLqce1dwa9kld2ketBUpqwvZZG41SqPXw7Mtnr" # replace with your API token
 
 connector = mbed_connector_api.connector(token)
-connector.putCallback("http://121.43.179.230:81/data")
+connector.putCallback("http://mbed.iotcent.org:81/data")
 print connector.getCallback().result
 
 
