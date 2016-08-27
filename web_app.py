@@ -9,6 +9,8 @@ import Queue
 import json
 import base64
 import MySQLdb as mdb
+import time
+
 app = Flask(__name__)
 socketio = SocketIO(app,async_mode='threading')
 queueTemp = Queue.Queue(maxsize = 30)
@@ -234,7 +236,7 @@ if __name__ == "__main__":
 	# create database TempHumTable if it not exists
 	cur.execute("create database if not exists temperature")
 	# select the database TempHumTable
-	cur.execute("use tempereture")
+	cur.execute("use temperature")
 	# create table temp for storing the temparature data if it not exists
 	cur.execute("create table if not exists temp(time TIME, temperature FLOAT(4,2), date DATE)")
 	# # clean the temp & hum table everyday
