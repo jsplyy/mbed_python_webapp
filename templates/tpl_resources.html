@@ -20,7 +20,10 @@
 			var url = "./get_pattern_resource?pointid=";
 			window.location.href = url + pointid + "&patternid=" + patternid + "&value=1";
 		}
-
+		function getTempResource(pointid,patternid){
+			var url = "./get_temp_resource?pointid=";
+			window.location.href = url + pointid + "&patternid=" + patternid;
+		}
 	</script>
 	</head>
 	<body>
@@ -55,7 +58,9 @@
 								{% elif epResources[index]['rt']=='Button' %}
 									<button class="btn btn-warning" onclick=getButtonResource("{{pointid}}","{{epResources[index]['uri']}}")>GetCnt</button>
 								{% elif epResources[index]['rt']=='Pattern' %}
-									<button class="btn btn-warning" onclick=getPatternResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>	
+									<button class="btn btn-warning" onclick=getPatternResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>
+								{% elif epResources[index]['rt']=='temp' %}
+									<button class="btn btn-warning" onclick=getTempResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>											
 								{% else %}
 									<button class="btn btn-warning" onclick=getNoresource()>Control</button>
 								{% endif %}
