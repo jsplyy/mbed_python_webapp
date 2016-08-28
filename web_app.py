@@ -161,5 +161,5 @@ if __name__ == "__main__":
 	# commit update to the database
 	con.commit()
 	print 'init database successfully!'
-	socketio.run(app,host='0.0.0.0', port=80,debug=True)
+	socketio.run(app,host='0.0.0.0', port=81,debug=True)
 
