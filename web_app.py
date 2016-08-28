@@ -90,7 +90,7 @@ def get_mcu_temp():
 	patternid = "/3205/0/3206"
 	return render_template("mcu_temp.html")
 
-@app.route('mcu_temp_weekly', methods=['GET'])
+@app.route('/mcu_temp_weekly', methods=['GET'])
 def get_mcu_temp_weekly():
 	return render_template('tpl_temp_resources_weekly.html')
 
@@ -161,5 +161,5 @@ if __name__ == "__main__":
 	# commit update to the database
 	con.commit()
 	print 'init database successfully!'
-	socketio.run(app,host='0.0.0.0', port=81,debug=True)
+	socketio.run(app,host='0.0.0.0', port=80,debug=True)
 
