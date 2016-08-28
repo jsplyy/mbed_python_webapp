@@ -1,12 +1,12 @@
 {% include 'header.html' %}
     <title>mcu monitor</title>
 </head>
-<body style="text-align: center">
+<body>
 
     <div class="container">
         <h3><img src="../static/img/NXP_logo.png">  Here is MCU temperature monitor</h3>
         <hr>
-        <hr>
+        <h5><strong>Clinet board ID: {{pointid}}</strong>  <strong><a href="./" style="float: right">返回主页</a></strong></h5><hr>
         <div id="main" style="width: 900px;height:500px;text-align: center"></div>
     </div>
 
@@ -35,7 +35,10 @@
                     tempValue = data;
                     // alert("tempValue="+tempValue);
                     // return parseInt(data,10);
-                }
+                },
+				error: function(data) {
+					alert(data.status+">>> "+data.statusText);
+				}
             });    
             // alert(tempValue);  
             return tempValue;      

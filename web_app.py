@@ -86,7 +86,13 @@ def get_temp_resource():
 
 @app.route('/mcu_temp', methods=['GET'])
 def get_mcu_temp():
+	pointid = "67e70b71-9460-4d1b-9035-c5eee0256f86"
+	patternid = "/3205/0/3206"
 	return render_template("mcu_temp.html")
+
+@app.route('mcu_temp_weekly', methods=['GET'])
+def get_mcu_temp_weekly():
+	return render_template('tpl_temp_resources_weekly.html')
 
 @app.route('/mcu_temp/random', methods=['GET'])
 def get_temp():
