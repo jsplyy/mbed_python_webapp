@@ -55,7 +55,7 @@ def get_button_resource():
 	epButtonResource = connector.getResourceValue(request.args.get("pointid"),request.args.get("buttonid"))
 	data = json.loads(epButtonResource.raw_data)
 	res_id = data['async-response-id']
-	while res_id not in tempDisc.keys()
+	while res_id not in tempDisc.keys():
 		None
 	buttonNumber = tempDisc[res_id]
 	del tempDisc[res_id]
@@ -67,14 +67,14 @@ def get_pattern_resource():
 		epPatternResource = connector.postResource(request.args.get("pointid"),request.args.get("patternid"),request.args.get("value"))
 		data = json.loads(epPatternResource.raw_data)
 		res_id = data['async-response-id']
-		while res_id not in tempDisc.keys()
+		while res_id not in tempDisc.keys():
 			None
 		patternValue = tempDisc[res_id]
 		del tempDisc[res_id]
 	epPatternResource = connector.getResourceValue(request.args.get("pointid"),request.args.get("patternid"))
 	data = json.loads(epPatternResource.raw_data)
 	res_id = data['async-response-id']
-	while res_id not in tempDisc.keys()
+	while res_id not in tempDisc.keys():
 		None
 	patternValue = tempDisc[res_id]
 	del tempDisc[res_id]
