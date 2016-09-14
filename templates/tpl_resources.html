@@ -24,6 +24,14 @@
 			var url = "./get_temp_resource?pointid=";
 			window.location.href = url + pointid + "&patternid=" + patternid;
 		}
+		function getBleResource(pointid,bleid){
+			var url = "./get_temp_resource?pointid=";
+			window.location.href = url + pointid + "&bleid=" + bleid;
+		}
+		function getAngleResource(pointid,angleid){
+			var url = "./get_temp_resource?pointid=";
+			window.location.href = url + pointid + "&angleid=" + angleid;
+		}		
 	</script>
 	</head>
 	<body>
@@ -60,7 +68,11 @@
 								{% elif epResources[index]['rt']=='Pattern' %}
 									<button class="btn btn-warning" onclick=getPatternResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>
 								{% elif epResources[index]['rt']=='temp' %}
-									<button class="btn btn-warning" onclick=getTempResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>											
+									<button class="btn btn-warning" onclick=getTempResource("{{pointid}}","{{epResources[index]['uri']}}")>SetPtn</button>
+								{% elif epResources[index]['rt']=='content' %}
+									<button class="btn btn-warning" onclick=getBleResource("{{pointid}}","{{epResources[index]['uri']}}")>Content</button>
+								{% elif epResources[index]['rt']=='Angle' %}
+									<button class="btn btn-warning" onclick=getAngleResource("{{pointid}}","{{epResources[index]['uri']}}")>Angle</button>																													
 								{% else %}
 									<button class="btn btn-warning" onclick=getNoresource()>Control</button>
 								{% endif %}

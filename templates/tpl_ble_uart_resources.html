@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+	<title>temperature</title>
+</head>
+<body>
+	<div class="container">
+		<h3><img src="../static/img/NXP_logo.png">  Here is kw40 ble message</h3>
+		<hr>
+		<h5><strong>Clinet board ID: {{pointid}}</strong>  <strong><a href="./" style="float: right">返回主页</a></strong></h5><hr>
+		<p>BLE ID:{{bleid}}</p>
+		<hr>
+		<p>Current MESSAGE is: {{bleContent}}</p>
+	</div>
+    
+{% include 'footer.html' %}

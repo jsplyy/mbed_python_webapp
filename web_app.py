@@ -61,6 +61,30 @@ def get_button_resource():
 	del tempDisc[res_id]
 	return render_template("tpl_btn_resources.html",cntNumber=buttonNumber,pointid=request.args.get("pointid"))
 
+# ble uart 
+@app.route('/get_ble_resource',methods=['GET'])
+def get_ble_resource():
+	epBleResource = connector.getResourceValue(request.args.get("pointid"),request.args.get("bleid"))
+	data = json.loads(epBleResource.raw_data)
+	res_id = data['async-response-id']
+	while res_id not in tempDisc.keys():
+		None
+	bleContent = tempDisc[res_id]
+	del tempDisc[res_id]
+	return render_template("tpl_ble_uart_resources.html",bleContent=bleContent,pointid=request.args.get("pointid"),bleid=request.args.get("bleid"))
+
+@app.route('/get_acce_resource',methods=['GET'])
+def get_acce_resource():
+	epAcceResource = connector.getResourceValue(request.args.get("pointid"),request.args.get("angleid"))
+	data = json.loads(epButtonResource.raw_data)
+	res_id = data['async-response-id']
+	while res_id not in tempDisc.keys():
+		None
+	acceAngle = tempDisc[res_id]
+	del tempDisc[res_id]
+	return render_template("tpl_ble_uart_resources.html",acceAngle=acceAngle,pointid=request.args.get("pointid"),bleid=request.args.get("angleid"))
+
+
 @app.route('/get_pattern_resource',methods=['GET'])
 def get_pattern_resource():
 	if(request.args.get("value")!='1'):
