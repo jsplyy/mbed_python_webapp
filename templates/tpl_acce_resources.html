@@ -1,5 +1,15 @@
 {% include 'header.html' %}
 	<title>temperature</title>
+	<script type="text/javascript" src="../static/js/jquery.rotate.min.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	$('#chrome').rotate({angle:{{acceAngle}}});
+});
+
+</script>	
+
 </head>
 <body>
 	<div class="container">
@@ -8,7 +18,8 @@
 		<h5><strong>Clinet board ID: {{pointid}}</strong>  <strong><a href="./" style="float: right">返回主页</a></strong></h5><hr>
 		<p>source ID:{{angleid}}</p>
 		<hr>
-		<p>Current angle is: {{acceAngle}}</p>
+		<p><strong>Current angle is: {{acceAngle}}</strong></p>
+		<img src="../static/img/arrow.png" id="chrome" style="transform: rotate(45deg); transform-origin: 50% 50% 0px;">
 	</div>
     
 {% include 'footer.html' %}

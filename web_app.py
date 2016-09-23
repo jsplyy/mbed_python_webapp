@@ -1,3 +1,9 @@
+import sys
+defaultencoding = 'utf-8'
+if sys.getdefaultencoding() != defaultencoding:
+    reload(sys)
+    sys.setdefaultencoding(defaultencoding)
+
 import mbed_connector_api 				# mbed Device Connector library
 import pybars 							# use to fill in handlebar templates
 from   flask 			import Flask,request,render_template,Response	# framework for hosting webpages
@@ -10,11 +16,17 @@ import json
 import base64
 import MySQLdb as mdb
 import time
+import random
+import datetime
 
 app = Flask(__name__)
 socketio = SocketIO(app,async_mode='threading')
 queueTemp = Queue.Queue(maxsize = 30)
+tempHighDic = {0:31, 1:29, 2:30, 3: 30, 4: 32, 5:32, 6: 33, 7:35, 8:36,9:34,10:38,11:36,12:39, 13:41, 14:38, 15:36,16:36,17:33,18:35, 19: 32,20:33,21:34,22:30,23:32 }
+tempLowDic = {0:28, 1:27, 2:29, 3: 28, 4: 30, 5:27, 6: 29, 7:30, 8:33,9:31,10:36,11:35,12:38, 13:38, 14:37, 15:33,16:34,17:30,18:32, 19: 29,20:30,21:32,22:30,23:29 }
 tempDisc={}
+hoursTemp = {}
+
 
 if 'ACCESS_KEY' in os.environ.keys():
 	token = os.environ['ACCESS_KEY'] # get access key from environment variable
@@ -81,6 +93,7 @@ def get_acce_resource():
 	while res_id not in tempDisc.keys():
 		None
 	acceAngle = tempDisc[res_id]
+	acceAngle = int(acceAngle)
 	del tempDisc[res_id]
 	return render_template("tpl_acce_resources.html",acceAngle=acceAngle,pointid=request.args.get("pointid"),angleid=request.args.get("angleid"))
 
@@ -88,7 +101,7 @@ def get_acce_resource():
 @app.route('/get_pattern_resource',methods=['GET'])
 def get_pattern_resource():
 	if(request.args.get("value")!='1'):
-		epPatternResource = connector.postResource(request.args.get("pointid"),request.args.get("patternid"),request.args.get("value"))
+		epPatternResource = connector.putResourceValue(request.args.get("pointid"),request.args.get("patternid"),request.args.get("value"))
 		data = json.loads(epPatternResource.raw_data)
 		res_id = data['async-response-id']
 		while res_id not in tempDisc.keys():
@@ -102,17 +115,48 @@ def get_pattern_resource():
 		None
 	patternValue = tempDisc[res_id]
 	del tempDisc[res_id]
+	
 	return render_template("tpl_pattern_resources.html",patternContent=patternValue,pointid=request.args.get("pointid"),patternid=request.args.get("patternid"))
 
 @app.route('/get_temp_resource', methods=['GET'])
 def get_temp_resource():
-	return render_template("tpl_temp_resources.html",pointid=request.args.get("pointid"),tempid=request.args.get("patternid"));
+	tempHour=[]; tempHigh=[]; tempLow=[]
+	now = datetime.datetime.now()
+	print now.hour
+	for i in range(0,24)[::-1]:
+
+		hours = now.hour + i - 23;
+		if (hours<0):
+			hours = hours + 24;
+		tempHour.append(hours) 
+		tempHigh.append(tempHighDic[hours])   
+		tempLow.append(tempLowDic[hours])
+
+	hoursTemp['hours'] = tempHour[::-1]
+	hoursTemp['tempHigh'] = tempHigh[::-1]
+	hoursTemp['tempLow'] = tempLow[::-1]	
+	return render_template("tpl_temp_resources.html",pointid=request.args.get("pointid"),tempid=request.args.get("patternid"),tempData=hoursTemp);
 
 @app.route('/mcu_temp', methods=['GET'])
 def get_mcu_temp():
-	pointid = "67e70b71-9460-4d1b-9035-c5eee0256f86"
-	patternid = "/3205/0/3206"
-	return render_template("mcu_temp.html")
+	pointid = "c9814c70-0944-4e03-a306-e4af7a7c579b"
+	tempid = "/3205/0/3206"
+	tempResource = connector.postResource(pointid,tempid)
+	data = json.loads(tempResource.raw_data)
+	res_id = data['async-response-id']
+	while res_id not in tempDisc.keys():
+		None
+	tempValue = tempDisc[res_id]
+	tempValue = int(tempValue)
+	del tempDisc[res_id]
+	
+	#udpate
+	now = datetime.datetime.now()
+	hours = now.hour
+	tempHighDic[hours] = tempValue
+	tempLowDic[hours] = tempValue - random.randint(0,4)
+
+	return Response(status=200)
 
 @app.route('/mcu_temp_weekly', methods=['GET'])
 def get_mcu_temp_weekly():
@@ -186,4 +230,5 @@ if __name__ == "__main__":
 	con.commit()
 	print 'init database successfully!'
 	socketio.run(app,host='0.0.0.0', port=81,debug=False, use_reloader=False)
+	print 'All services started --'
 
